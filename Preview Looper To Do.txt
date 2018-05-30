@@ -1,0 +1,30 @@
+PREVIEW LOOPER
+
+/ 1. laad videobestand in site via een directe link
+	https://electronjs.org/docs/api/file-object
+	X bestand inladen via een input menu werkt. 
+	- bestand afspelen in een html <video>
+
+
+/ 2. laad een folder vol bestanden in een site via een directe link
+	https://electronjs.org/docs/api/file-object
+	X bestanden inladen via een input menu werkt.
+	- bestand afspelen in een html <video>
+
+
+3. laad een videobestand via een 'open' menu
+	https://electronjs.org/docs/api/menu
+	https://electronjs.org/docs/api/menu-item
+
+4. laad een folder met bestanden via een 'open' menu
+	https://electronjs.org/docs/api/menu
+	https://electronjs.org/docs/api/menu-item
+
+5. laad bestanden in via drag 'n drop
+	https://electronjs.org/docs/api/file-object
+
+6. zorg voor dat alle soorten bestanden afgespeeld kunnen worden
+	https://www.npmjs.com/package/ffmpeg
+
+7. maak een interface welke schaalt met de schermgrootte 
+	https://electronjs.org/docs/api/screen

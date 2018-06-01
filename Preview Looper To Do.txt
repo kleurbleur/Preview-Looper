@@ -1,15 +1,15 @@
 PREVIEW LOOPER
 
-/ 1. laad videobestand in site via een directe link
+X 1. laad videobestand in site via een directe link
 	https://electronjs.org/docs/api/file-object
 	X bestand inladen via een input menu werkt. 
-	- bestand afspelen in een html <video>
+	X bestand afspelen in een html <video>
 
 
-/ 2. laad een folder vol bestanden in een site via een directe link
+X 2. laad een folder vol bestanden in een site via een directe link
 	https://electronjs.org/docs/api/file-object
 	X bestanden inladen via een input menu werkt.
-	- bestand afspelen in een html <video>
+	X bestand afspelen in een html <video>
 
 
 3. laad een videobestand via een 'open' menu
@@ -19,12 +19,28 @@ PREVIEW LOOPER
 4. laad een folder met bestanden via een 'open' menu
 	https://electronjs.org/docs/api/menu
 	https://electronjs.org/docs/api/menu-item
+	https://electronjs.org/docs/api/dialog
+
+5. laad bestanden in via het app icoon
+	https://gist.github.com/nishanths/42eb1c00445f87a2dd6d
+	https://github.com/electron/electron/issues/1926
 
 5. laad bestanden in via drag 'n drop
-	https://electronjs.org/docs/api/file-object
+	X https://electronjs.org/docs/api/file-object
 
 6. zorg voor dat alle soorten bestanden afgespeeld kunnen worden
 	https://www.npmjs.com/package/ffmpeg
 
 7. maak een interface welke schaalt met de schermgrootte 
-	https://electronjs.org/docs/api/screen
+	/ https://electronjs.org/docs/api/screen
+	https://css-tricks.com/auto-sizing-columns-css-grid-auto-fill-vs-auto-fit/
+
+8. maak een interface welke aanvoelt als Quicklook
+	X https://electronjs.org/docs/api/frameless-window
+
+9. sluit de app met esc 
+	https://electronjs.org/docs/api/accelerator
+
+10. app icon
+	https://stackoverflow.com/questions/31529772/how-to-set-app-icon-for-electron-atom-shell-app
+	https://github.com/electron-userland/electron-forge/tree/5.x

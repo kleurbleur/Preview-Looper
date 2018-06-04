@@ -1,6 +1,6 @@
 // Modules to control application life and create native browser window
 const electron = require('electron')
-const {app, BrowserWindow} = require('electron')
+const {app, BrowserWindow, globalShortcut} = require('electron')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
@@ -27,6 +27,12 @@ app.on('ready', () => {
      // when you should delete the corresponding element.
      mainWindow = null
    })
+
+   // Use esc as a quit shortcut
+   globalShortcut.register('Escape', () => {
+    app.quit()
+   })
+
 })
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {

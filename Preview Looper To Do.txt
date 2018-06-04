@@ -39,7 +39,7 @@ X 2. laad een folder vol bestanden in een site via een directe link
 	X https://electronjs.org/docs/api/frameless-window
 
 9. sluit de app met esc 
-	https://electronjs.org/docs/api/accelerator
+	X https://electronjs.org/docs/api/accelerator
 
 10. app icon
 	https://stackoverflow.com/questions/31529772/how-to-set-app-icon-for-electron-atom-shell-app

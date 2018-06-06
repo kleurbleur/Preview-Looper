@@ -15,6 +15,7 @@ X 2. laad een folder vol bestanden in een site via een directe link
 3. laad een videobestand via een 'open' menu
 	https://electronjs.org/docs/api/menu
 	https://electronjs.org/docs/api/menu-item
+	https://electronjs.org/docs/api/dialog
 
 4. laad een folder met bestanden via een 'open' menu
 	https://electronjs.org/docs/api/menu
@@ -30,6 +31,10 @@ X 2. laad een folder vol bestanden in een site via een directe link
 
 6. zorg voor dat alle soorten bestanden afgespeeld kunnen worden
 	https://www.npmjs.com/package/ffmpeg
+	Lijkt er niet op dat het makkelijk gaat werken. Er is nu nog een 
+	eigen built van Chromium voor nodig met de correcte flags gevinkt. 	Zie links, onderste is config voor ffmpeg in win:
+	https://github.com/electron/libchromiumcontent/issues/198
+	https://cs.chromium.org/chromium/src/third_party/ffmpeg/chromium/config/Chrome/win/x64/config.h?sq=package:chromium
 
 7. maak een interface welke schaalt met de schermgrootte 
 	/ https://electronjs.org/docs/api/screen

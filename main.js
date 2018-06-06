@@ -1,16 +1,18 @@
 // Modules to control application life and create native browser window
 const electron = require('electron')
 const {app, BrowserWindow, globalShortcut} = require('electron')
+const fs = require('fs')
 
 // Keep a global reference of the window object, if you don't, the window will
 // be closed automatically when the JavaScript object is garbage collected.
 let mainWindow
 
+
 // This method will be called when Electron has finished
 // initialization and is ready to create browser windows.
 // Some APIs can only be used after this event occurs.
 app.on('ready', () => {
-   // Create the browser window.
+   // Create the browser window and size it according to the width of the screen.
    const {width, height} = electron.screen.getPrimaryDisplay().workAreaSize
    mainWindow = new BrowserWindow({width: Math.ceil(width * 0.8), height: Math.ceil(height * 0.8), frame: false})
 
@@ -18,7 +20,7 @@ app.on('ready', () => {
    mainWindow.loadFile('./app/index.html')
 
    // Open the DevTools.
-   mainWindow.webContents.openDevTools()
+   // mainWindow.webContents.openDevTools()
 
    // Emitted when the window is closed.
    mainWindow.on('closed', function () {
@@ -34,6 +36,8 @@ app.on('ready', () => {
    })
 
 })
+
+
 // Quit when all windows are closed.
 app.on('window-all-closed', function () {
   // On OS X it is common for applications and their menu bar

@@ -20,6 +20,9 @@
     "electron": "^2.0.0"
   },
   "dependencies": {
-    "electron-drag": "^1.2.0"
+    "electron-drag": "^1.2.0",
+    "wcjs-player": "^6.0.1",
+    "wcjs-prebuilt": "^3.0.0",
+    "wcjs-renderer": "^1.0.2"
   }
 }
